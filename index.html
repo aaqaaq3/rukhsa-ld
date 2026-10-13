@@ -223,7 +223,7 @@ button:focus-visible, [tabindex]:focus-visible { outline: 3px solid var(--accent
   var stdBy = {}; STD.forEach(function (s) { stdBy[s.n] = s; });
   var indBy = {}; STD.forEach(function (s) { s.indicators.forEach(function (i) { indBy[i.id] = i; }); });
   var LET = ['أ', 'ب', 'ج', 'د'];
-  var BYLINE = '<div class="byline"><span class="who"><span>إعداد:</span> الدكتور محمد قرموش</span><span class="ai">مُمكَّن بالذكاء الاصطناعي</span></div>';
+  var BYLINE = '<div class="byline"><span class="who"><span>إعداد:</span> الدكتور محمد قرموش</span><span class="ai">ممكن الذكاء الاصطناعي</span></div>';
   var app = document.getElementById('app');
 
   function ar(n) { return Number(n).toLocaleString('ar-SA', { useGrouping: false }); }
@@ -325,7 +325,7 @@ button:focus-visible, [tabindex]:focus-visible { outline: 3px solid var(--accent
         '<span class="bar ok"><i style="width:' + pct(p.good, p.total) + '%"></i></span></span></button>';
     });
     h += '</div>';
-    h += '<footer class="foot"><p><b>إعداد الدكتور محمد قرموش</b>، مُمكَّن بالذكاء الاصطناعي.</p><p>أُعدّت الأسئلة اعتمادًا على ملفات «الموسوعة الذهبية» لمعايير التخصص، وهي للتدريب والمحاكاة، وليست أسئلة الاختبار الرسمية.</p>';
+    h += '<footer class="foot"><p><b>إعداد الدكتور محمد قرموش</b>، ممكن الذكاء الاصطناعي.</p><p>أُعدّت الأسئلة اعتمادًا على ملفات «الموسوعة الذهبية» لمعايير التخصص، وهي للتدريب والمحاكاة، وليست أسئلة الاختبار الرسمية.</p>';
     if (ui.confirmReset) {
       h += '<div class="confirm"><p>سيُمسح سجل إجاباتك والأسئلة المعلَّمة من هذا الجهاز. هل تريد المتابعة؟</p><div class="row"><button class="btn danger" data-act="reset-yes">نعم، امسح السجل</button><button class="btn ghost" data-act="reset-no">إلغاء</button></div></div>';
     } else {
